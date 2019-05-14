@@ -1,0 +1,19 @@
+.card-events {
+  border: 5px solid black;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-city {
+  border: 5px solid black;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" type="text/css" href="bootswatch.css" />
+  <link rel="stylesheet" type="text/css" href="cards.css" />
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <!-- <div class="jumbotron">
+  <div class="container">
+
+  <div class="d-flex justify-content-around">
+  <h1 class="display-5">Eventbride</h1>
+</div>
+</div>
+</div> -->
+<div class="flex-container">
+<!-- <div class="d-flex align-content-start flex-wrap"> -->
+  <div class="card-events" style="width: 24rem;" >
+    <img class="card-img-top" src="event-picture.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+
+      <h5><%= event.title %></h5>
+      <p class="card-text">
+        Date de début :<%= event.start_date %><br>
+        Date de fin :<%= event.end_date %><br>
+        Durée (en min) :<%= event.duration %><br>
+        Prix :<%= event.price %><br>
+        Localisation :<%= event.location %><br>
+      </p>
+      <a href="#" class="btn btn-primary">Voir plus</a>
+    </div>
+  </div>
+  <div class="card-events" style="width: 24rem;" >
+    <img class="card-img-top" src="event-picture.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+
+      <h5><%= event.title %></h5>
+      <p class="card-text">
+        Date de début :<%= event.start_date %><br>
+        Date de fin :<%= event.end_date %><br>
+        Durée (en min) :<%= event.duration %><br>
+        Prix :<%= event.price %><br>
+        Localisation :<%= event.location %><br>
+      </p>
+      <a href="#" class="btn btn-primary">Voir plus</a>
+    </div>
+  </div>
+  <div class="card-events" style="width: 24rem;" >
+    <img class="card-img-top" src="event-picture.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+
+      <h5><%= event.title %></h5>
+      <p class="card-text">
+        Date de début :<%= event.start_date %><br>
+        Date de fin :<%= event.end_date %><br>
+        Durée (en min) :<%= event.duration %><br>
+        Prix :<%= event.price %><br>
+        Localisation :<%= event.location %><br>
+      </p>
+      <a href="#" class="btn btn-primary">Voir plus</a>
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+<div class="jumbotron">
+  <div class="container">
+
+    <div class="d-flex justify-content-around">
+      <h1 class="display-5">Eventbride</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <%- @events.each do |event| -%>
+  <div class="col-md-4">
+    <h5><%= event.title %></h5>
+    Date de début :<%= event.start_date %><br>
+    Date de fin :<%= event.end_date %><br>
+    Durée (en min) :<%= event.duration %><br>
+    Prix :<%= event.price %><br>
+    Localisation :<%= event.location %><br>
+    par :<%= event.administrator.first_name + " " + event.administrator.last_name%> <br><br>
+    <a href="<%= event_path(event.id) %>" class="btn btn-primary btn-sm">Voir plus</a>
+    <br><br>
+
+  </div>
+
+  <%- end -%>
+</div>
+</div>
